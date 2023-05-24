@@ -1,0 +1,73 @@
+.navbar{
+    background-color: white;
+    height: 190px;
+    border:none;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.555);
+    margin-bottom: 0px;
+    
+}
+.container-fluid{
+    width: 100%;
+}
+.navbar-header{
+    width: 100%;
+    height: 50px;
+}
+.navbar-header-image{
+    width: 70px;
+}
+.navbar-logo{
+    margin-left: 45.5%;
+    height: 0px;
+}
+.navbar-toggle{
+    background-color: #e98e99;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navbar-collapse{
+    padding-left: 0px;
+
+}
+.navbar-nav{
+    margin-top: 50px;
+    margin-left:0px ;
+
+}
+.navbar-nav li:hover{
+    background-color: #e98e99;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.423);
+}
+.activebutton{
+    background-color: #e98e99;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.423);
+}
+.activebutton a{
+    color: white;
+}
+.navbar-right{
+    width: 32%;
+    margin-left:0px ;
+}
+
+
+
+@media screen and (max-width: 767.9px) 
+{ /*lma y3ml collapse*/
+.navbar-nav
+{
+    margin-top: 10px;
+}
+.navbar-right
+{
+    margin-top: 0px;
+}
+.navbar-collapse
+{
+    margin-top: 120px;
+    border: none;
+    background-color: white;
+}
+
+}

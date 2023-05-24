@@ -1,0 +1,28 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!--<div class="navbar-navnavbar-header">
+            <a class=" navbar-brand" routerLink="#"><img class=" navbar-header-image" src="../../assets/websiteLogo.png" alt="logo"></a>
+        </div>--> 
+        <br>
+
+        <div class="navbar-header">
+        <a class="navbar-logo" routerLink="/home"><img class=" navbar-header-image" src="../../assets/websiteLogo.png" alt="logo"></a>
+        <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+            <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+        </button>
+        </div>
+        <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+            <ul class="nav navbar-nav">
+                <li [ngClass]='{activebutton: isactivee[0] === true}'><a routerLink="/home" (click)="checkactive(0)">Home</a></li>
+                <li [ngClass]='{activebutton: isactivee[1] === true}'><a routerLink="/events" (click)="checkactive(1)">Events</a></li>
+                <li [ngClass]='{activebutton: isactivee[2] === true}'><a routerLink="/artworks" (click)="checkactive(2)">Artwork</a></li>
+                <li [ngClass]='{activebutton: isactivee[3] === true}'><a routerLink="/about" (click)="checkactive(3)">About Us</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li [ngClass]='{activebutton: isactivee[4] === true}'><a routerLink="/signup" (click)="checkactive(4)"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li [ngClass]='{activebutton: isactivee[5] === true}'><a routerLink="/login" (click)="checkactive(5)"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,10 @@
+.container div a img {
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.container div a img:hover{
+    transform: scale(1.1);
+}

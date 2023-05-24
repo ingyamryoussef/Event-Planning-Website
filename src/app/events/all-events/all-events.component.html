@@ -1,0 +1,25 @@
+<div class="container">
+    <div *ngFor="let event of events; let i=index; " class="col-xs-6">
+        <div class="card">
+            <a [routerLink]="['/events/', event.routerlink]">
+                <img [src]="event.imagePath" alt="Avatar" style="width:100%">
+                <div class="cardcontainer">
+                    <h4><b>{{event.name}}</b></h4>
+                </div>
+            </a>
+        </div>
+        <div *ngIf="isadmin" class="removebtn">
+            <a routerLink="/events" (click)="removeEvent(i)" >Remove Card</a>
+        </div>
+    </div>
+    <div *ngIf="isadmin" class="col-xs-6">
+        <div class="card" (click)="openForm()">
+            <a routerLink="/events/addEvent">
+                <img src="../../../assets/addItem.png" alt="Avatar" style="width:100%">
+                <div class="cardcontainer">
+                    <h4><b>Add New Event</b></h4>
+                </div>
+            </a>  
+        </div>    
+    </div>
+</div>

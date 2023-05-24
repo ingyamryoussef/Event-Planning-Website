@@ -1,0 +1,15 @@
+.container{
+    background-color: #e98e99;
+    color: white;
+    text-align: center;       
+    padding-top: 15%; 
+    padding-bottom: 20%;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.536);
+
+}
+.error{
+    font-size: 90px;
+}
+.status , .notfound {
+    font-size: 30px;
+}
